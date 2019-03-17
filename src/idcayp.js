@@ -1,3 +1,5 @@
+/* https://github.com/nickbooties */
+
 MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
 //delete anything that changes with cookie/privacy in the html
