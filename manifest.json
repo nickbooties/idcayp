@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "idcayp",
+  "version": "0.2",
+  "applications": {
+
+  },
+  "description": "I Don't Care About Your Policy",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["idcayp.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
