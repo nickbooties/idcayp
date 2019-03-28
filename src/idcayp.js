@@ -8,9 +8,9 @@ var observer = new MutationObserver(function(mutations, observer) {
 
       t = mutation.target;
 
-      if(t.className.search(/idcayp/) == -1) {
+      if(t.className.search(/idcayp/) == -1 && t.nodeName.toString().search(/html|body/ig) <0) {
 
-        if(t.innerHTML.toString().search(/privacy|cookie/ig) >= 0) {
+        if(t.innerHTML.toString().search(/privacy|cookie|subscribe/ig) >= 0) {
 
           console.log(mutation);
           if(mutation.attributeName == "class") {
